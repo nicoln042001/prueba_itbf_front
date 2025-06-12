@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000/hoteles'; // Cambia el puerto si tu backend usa otro
+const API_URL = `${process.env.REACT_APP_BASE_URL}hoteles`;
 
 export async function getHoteles() {
   const res = await fetch(API_URL);

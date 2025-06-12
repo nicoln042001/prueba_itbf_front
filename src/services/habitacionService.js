@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000/habitaciones'; // Cambia el puerto si tu backend usa otro
+const API_URL = `${process.env.REACT_APP_BASE_URL}habitaciones`;
 
 export async function getHabitaciones() {
   const res = await fetch(API_URL);
@@ -34,13 +34,13 @@ export async function deleteHabitacion(id) {
 }
 
 export async function getAcomodaciones() {
-  const res = await fetch('http://localhost:8000/acomodaciones');
+  const res = await fetch(`${process.env.API_URL}acomodaciones`);
   if (!res.ok) throw new Error('Error al obtener acomodaciones');
   return await res.json();
 }
 
 export async function getTipoHabitaciones() {
-  const res = await fetch('http://localhost:8000/tipoHabitaciones');
+  const res = await fetch(`${process.env.API_URL}tipoHabitaciones`);
   if (!res.ok) throw new Error('Error al obtener tipos de habitación');
   return await res.json();
 } 
