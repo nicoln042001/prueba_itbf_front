@@ -1,4 +1,4 @@
-const API_URL = `${process.env.REACT_APP_BASE_URL}hoteles`;
+const API_URL = `${import.meta.env.VITE_BASE_URL}hoteles`;
 
 export async function getHoteles() {
   const res = await fetch(API_URL);

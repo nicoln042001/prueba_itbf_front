@@ -1,4 +1,4 @@
-const API_URL = `${process.env.REACT_APP_BASE_URL}habitaciones`;
+const API_URL = `${import.meta.env.VITE_BASE_URL}habitaciones`;
 
 export async function getHabitaciones() {
   const res = await fetch(API_URL);
@@ -34,13 +34,13 @@ export async function deleteHabitacion(id) {
 }
 
 export async function getAcomodaciones() {
-  const res = await fetch(`${process.env.API_URL}acomodaciones`);
+  const res = await fetch(`${import.meta.env.VITE_BASE_URL}acomodaciones`);
   if (!res.ok) throw new Error('Error al obtener acomodaciones');
   return await res.json();
 }
 
 export async function getTipoHabitaciones() {
-  const res = await fetch(`${process.env.API_URL}tipoHabitaciones`);
+  const res = await fetch(`${import.meta.env.VITE_BASE_URL}tipoHabitaciones`);
   if (!res.ok) throw new Error('Error al obtener tipos de habitación');
   return await res.json();
 } 
