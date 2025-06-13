@@ -1,6 +1,6 @@
 # Prueba ITBF Front
 
-Este proyecto es una aplicación frontend desarrollada con React y Vite. Sirve como base para pruebas técnicas y desarrollo rápido de interfaces modernas utilizando las últimas herramientas del ecosistema React.
+Este proyecto es una aplicación frontend desarrollada con React y Vite. Es el resultado de la prueba técnica para ITBF.
 
 ## Características
 
@@ -56,8 +56,3 @@ prueba-itbf-front/
 ├── vite.config.js
 └── README.md
 ```
-
-## Notas
-
-- Puedes personalizar la configuración de ESLint según las necesidades de tu equipo.
-- Para producción, se recomienda usar TypeScript.
