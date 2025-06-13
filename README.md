@@ -15,7 +15,7 @@ Sigue estos pasos para instalar y ejecutar el proyecto localmente:
 
 1. **Clona el repositorio:**
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/nicoln042001/prueba_itbf_front.git
    cd prueba-itbf-front
    ```
 
