@@ -26,7 +26,7 @@ const HotelList = ({ hoteles, onSelectHotel, hotelSeleccionado }) => {
               <td>{hotel.direccion}</td>
               <td>{hotel.ciudad}</td>
               <td>{hotel.nit}</td>
-              <td className="text-center">{hotel.numeroHabitaciones}</td>
+              <td className="text-center">{hotel.numero_habitaciones}</td>
               <td className="text-center">
                 <button onClick={() => onSelectHotel(idx)} className="btn btn-sm btn-info">
                   Gestionar habitaciones
