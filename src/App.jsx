@@ -45,13 +45,10 @@ function App() {
   const handleAddHabitacion = async (habitacion) => {
     try {
       const hotel = hoteles[hotelSeleccionado]
-      // Debes mapear tipo y acomodacion a sus IDs reales según tu modelo
-      // Aquí se asume que tienes los IDs disponibles o debes consultarlos
-      // Por simplicidad, se envía el nombre, pero deberías adaptar esto
       const data = {
         hotel_id: hotel.id,
-        tipo_habitacion_id: habitacion.tipo, // Debes mapear a ID real
-        acomodacion_id: habitacion.acomodacion, // Debes mapear a ID real
+        tipo_habitacion_id: habitacion.tipo, 
+        acomodacion_id: habitacion.acomodacion,
         cantidad: habitacion.cantidad,
         estado: 1
       }
